@@ -10,31 +10,33 @@ class InfoPage4 extends StatefulWidget {
 class _InfoPage4State extends State<InfoPage4> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Image.asset('assets/images/info_3_pic.png'),
-        const SizedBox(
-          height: 30,
-        ),
-        const Text(
-          textAlign: TextAlign.center,
-          'Personalize Your Learning Path',
-          style: TextStyle(
-            color: Color(0xFF00434C),
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
+    return Scaffold(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset('assets/images/info_4_pic.png'),
+          const SizedBox(
+            height: 30,
           ),
-        ),
-        const Text(
-          textAlign: TextAlign.center,
-          'Customize Your Learning With Progress Tracking, And Interactive Activities.',
-          style: TextStyle(
-            color: Color(0xFF6C6C6C),
-            fontSize: 15,
+          const Text(
+            textAlign: TextAlign.center,
+            'Personalize Your Learning Path',
+            style: TextStyle(
+              color: Color(0xFF00434C),
+              fontSize: 19,
+              fontWeight: FontWeight.bold,
+            ),
           ),
-        )
-      ],
+          const Text(
+            textAlign: TextAlign.center,
+            'Customize Your Learning With Progress Tracking, And Interactive Activities.',
+            style: TextStyle(
+              color: Color(0xFF6C6C6C),
+              fontSize: 15,
+            ),
+          )
+        ],
+      ),
     );
   }
 }

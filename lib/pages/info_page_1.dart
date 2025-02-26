@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:project_ua/pages/info_page_2.dart';
 import 'package:project_ua/pages/info_page_3.dart';
 import 'package:project_ua/pages/info_page_4.dart';
-import 'package:project_ua/pages/sign_in_or_up.dart';
+import 'package:project_ua/pages/login_pages/sign_in_or_up.dart';
 
 class InfoPage1 extends StatefulWidget {
   const InfoPage1({super.key});
@@ -98,7 +98,9 @@ class _InfoPage1State extends State<InfoPage1> {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                      elevation: 0, shadowColor: Colors.transparent),
+                      elevation: 0,
+                      shadowColor: Colors.transparent,
+                      overlayColor: Colors.transparent),
                   child: const Text(
                     'SKIP',
                     style: TextStyle(
